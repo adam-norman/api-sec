@@ -1,0 +1,42 @@
+﻿@page
+@model WebAppSecTraining.Pages.Account.LoginModel
+@{
+}
+
+
+<div class="container-fluid">
+
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-2">
+                <label class="col-form-label" asp-for="Credential.Username"></label>
+            </div>
+            <div class="col">
+                <input type="text" id="form2Example1" asp-for="Credential.Username" class="form-control" />
+            </div>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-group row">
+            <div class="col-2">
+                <label class="col-form-label" asp-for="Credential.Password"></label>
+            </div>
+            <div class="col">
+                <input type="password" id="form2Example2" asp-for="Credential.Password" class="form-control" />
+            </div>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-group row">
+            <div class="col-2 mr-1">
+                <input type="checkbox" id="form2Example2" class=" form-check-input" asp-for="Credential.RememberMe"  />
+                <label  asp-for="Credential.RememberMe" class="form-check-label"></label>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+
+    </form>
+</div>
